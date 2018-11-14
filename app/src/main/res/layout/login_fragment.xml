@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1EEFC">
-    <!--android:background="@drawable/bggradient"-->
+
+    android:background="@drawable/bggradient">
+
 
 
     <ImageView
@@ -14,83 +15,97 @@
         android:layout_height="140dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="52dp"
         android:src="@drawable/loginlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="200dp"
-        android:fontFamily="@font/lamoon"
-        android:text="Email"
-        android:textColor="@color/colorFont"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--<TextView-->
+        <!--android:id="@+id/email"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="52dp"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:fontFamily="@font/lamoon"-->
+        <!--android:text="Email"-->
+        <!--android:textColor="@color/colorFont"-->
+        <!--android:textSize="24sp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
 
-    <TextView
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/lamoon"
-        android:text="Password"
-        android:textColor="@color/colorFont"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+    <!--<TextView-->
+        <!--android:id="@+id/password"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="27dp"-->
+        <!--android:fontFamily="@font/lamoon"-->
+        <!--android:text="Password"-->
+        <!--android:textColor="@color/colorFont"-->
+        <!--android:textSize="24sp"-->
+        <!--tools:layout_editor_absoluteX="36dp"-->
+        <!--tools:layout_editor_absoluteY="291dp" />-->
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_width="293dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
         android:background="@drawable/rounded"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:textSize="24dp"
         android:fontFamily="@font/lamoon"
-        app:layout_constraintBottom_toBottomOf="@+id/email"
+        android:inputType="textPersonName"
+        android:hint="  อีเมล"
+        android:textSize="24dp"
         app:layout_constraintCircleRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/email" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_width="293dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/rounded"
         android:ems="10"
-        android:inputType="textPassword"
-        android:text="Name"
-        android:textSize="24dp"
         android:fontFamily="@font/lamoon"
-        app:layout_constraintBottom_toBottomOf="@+id/password"
+        android:inputType="textPassword"
+        android:textSize="24dp"
+        android:hint="  รหัสผ่าน"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="293dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/button_ok"
         android:fontFamily="@font/lamoon"
-        android:text="         Sign in         "
-        android:textSize="24dp"
+        android:text="ลงชื่อเข้าใช้"
         android:textColor="#FFFFFF"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lamoon"
+        android:text="สมัครสมาชิก"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 
 </android.support.constraint.ConstraintLayout>
