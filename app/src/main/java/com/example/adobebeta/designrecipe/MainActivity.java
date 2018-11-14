@@ -10,12 +10,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (savedInstanceState == null){
+        if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.main_view,new LoginFragement())
+                    .replace(R.id.main_view, new LoginFragement())
                     .addToBackStack(null)
                     .commit();
         }
+
     }
 }
